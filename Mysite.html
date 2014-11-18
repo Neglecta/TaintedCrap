@@ -31,17 +31,19 @@
         background: rgb(35, 44, 57);
         padding-top: 28px;
         padding-bottom: 28px;
-        }
+}
 
       .navigation {
         display: flex;
-        width: 1145px;
+        width: 1020px;
         margin-left:auto;
         margin-right:auto;
-        
+          justify-content: space-between;
 }
-
-        .navigation > div { 
+        .navigation-left, .navigation-right {        
+            display: flex;       
+}
+        .navigation-item { 
          font-size:12px;
          font-weight:600;
          text-transform:uppercase;
@@ -49,20 +51,32 @@
             color: rgb(120, 141, 158);
 }
 
+         .navigation-neon { 
+          font-size:12px;
+          font-weight:600;
+          text-transform:uppercase;
+          margin-right: 24px;
+          color: rgb(188, 210, 238);
+}
+
    </style>
 </head>
 <body>
-<div class="navigation-container"> 
-   <div class="navigation">
-     <div>About</div>
-     <div>LEARN</div>
-     <div>DOCS</div>
-     <div>EXAMPLES</div>
-     <div>COMMUNITY</div>
-     <div>More</div>
-     <div>FAQ</div>
-     <div>CONTACTS</div>
-
+ <div class="navigation-container"> 
+    <div class="navigation-item">
+        <div class="navigation">
+       <div class="navigation-left">
+     <div class="navigation-item">About</div>
+     <div class="navigation-item">LEARN</div>
+     <div class="navigation-item">DOCS</div>
+     <div class="navigation-item">EXAMPLES</div>
+     <div class="navigation-item">COMMUNITY</div>
+     <div class="navigation-item">More</div>
+     </div>
+     <div class="navigation-right">
+     <div class="navigation-item">FAQ</div>
+     <div class="navigation-neon">CONTACTS</div>
+  </div>
 </div>
 </div>
 
